@@ -339,7 +339,6 @@
 .main-section5-bottom > div {
   width: calc((100% - 30px) / 3);
   height: 230px;
-  position: relative;
   background-color: black;
   border-radius: 5px;
   background-position: center;
@@ -373,7 +372,6 @@
 .main-section5-bottom > div:nth-of-type(3) {
   background-image: url("../traccia/images/news-3.jpg");
 }
-
 @media screen and (max-width: 768px) {
   .main-section1 {
     width: 70%;

@@ -203,7 +203,6 @@
             >div{
                 width: calc((100% - 30px) / 3);
                 height: 230px;
-                position: relative;
                 background-color: black;
                 border-radius: 5px;
                 background-position: center;
@@ -240,6 +239,12 @@
         }
     }
     // /section5
+
+    // section6
+    &-section6{
+        
+    }
+    // /section6
 }
 
 // smartphone
