@@ -1,0 +1,38 @@
+@mixin flexCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin felxAlignCenter{
+    display: flex;
+    align-items: center;
+}
+@mixin flexColumnCenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@mixin container1{
+    width: 70%;
+    margin: 0 auto;
+}
+@mixin container2{
+    width: 68%;
+    margin: 0 auto;
+}
+@mixin container3{
+    width: 70%;
+    margin: 0 auto;
+}
+@mixin button1{
+    border-radius: 3px;
+    padding: 8px 15px;
+    background-color: $green;
+    color: #fff;
+}
+@mixin button2{
+    border-radius: 3px;
+    padding: 8px 15px;
+    border: 1px solid $green;
+    color: #fff;
+}
