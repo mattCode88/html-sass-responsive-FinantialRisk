@@ -61,7 +61,7 @@
         background-color: #111117;
         color: #fff;
         &-top{
-            @include container3;
+            @include container1;
             margin-bottom: 30px;
             >div:last-of-type{
                 display: flex;
@@ -78,7 +78,7 @@
             }
         }
         &-bottom{
-            @include container3;
+            @include container1;
             display: flex;
             flex-wrap: wrap;
             >div{
@@ -113,7 +113,7 @@
     // section4
     &-section4{
         display: flex;
-        @include container3;
+        @include container1;
         &-left{
             width: 70%;
             padding-right: 20px;
@@ -180,9 +180,6 @@
         background-color: #eef4ed;
         &-top{
             @include container1;
-            >*{
-                margin-bottom: 20px;
-            }
             >div:last-of-type{
                 display: flex;
                 justify-content: space-between;
@@ -242,9 +239,66 @@
 
     // section6
     &-section6{
-        
-    }
+        background-color: $darkBlack;
+        >div{
+            display: flex;
+            flex-wrap: wrap;
+            @include container3;
+            .main-section6-left, .main-section6-right{
+                width: 50%;
+                h2{
+                    color: #fff;
+                }
+            }
+            .main-section6-left{
+                padding-right: 10px;
+            }
+            .main-section6-right{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding-left: 10px;
+                ::placeholder{
+                        color: #fff;
+                    }
+                input{
+                    // width: 100%;
+                    height: 30px;
+                    background-color: #1e1d23;
+                    border: none;
+                    padding-left: 10px;
+                }
+                a{
+                    @include button1;
+                    width: max-content;
+                }
+            }
+        }
+        }
     // /section6
+
+    // section7
+    &-section7{
+        @include container1;
+        display: flex;
+        &-left{
+            width: 65%;
+        }
+        &-right{
+            width: 35%;
+            >div{
+                span{
+                    display: inline-block;
+                    display: flex;
+                    width: 25px;
+                    background-color: red;
+                    padding: 5px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+    // /section7
 }
 
 // smartphone
@@ -321,6 +375,22 @@
             }
         }
     }
+    .main-section6{
+        >div{
+            @include container1;
+            .main-section6-left, .main-section6-right{
+                width: 100%;
+                padding-left: 0;
+                padding-right: 0;
+                input{
+                    margin-top: 20px;
+                }
+                a{
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
 }
 // /smartphone
 
@@ -378,6 +448,21 @@
             }
             >div:nth-of-type(3){
                 margin-top: 15px;
+            }
+        }
+    }
+    .main-section6{
+        >div{
+            .main-section6-left, .main-section6-right{
+                width: 100%;
+                padding-left: 0;
+                padding-right: 0;
+                input{
+                    margin-top: 20px;
+                }
+                a{
+                    margin-top: 20px;
+                }
             }
         }
     }

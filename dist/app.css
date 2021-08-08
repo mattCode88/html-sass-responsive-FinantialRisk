@@ -310,9 +310,6 @@
   width: 70%;
   margin: 0 auto;
 }
-.main-section5-top > * {
-  margin-bottom: 20px;
-}
 .main-section5-top > div:last-of-type {
   display: flex;
   justify-content: space-between;
@@ -372,6 +369,74 @@
 .main-section5-bottom > div:nth-of-type(3) {
   background-image: url("../traccia/images/news-3.jpg");
 }
+.main-section6 {
+  background-color: #111117;
+}
+.main-section6 > div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: 0 auto;
+}
+.main-section6 > div .main-section6-left, .main-section6 > div .main-section6-right {
+  width: 50%;
+}
+.main-section6 > div .main-section6-left h2, .main-section6 > div .main-section6-right h2 {
+  color: #fff;
+}
+.main-section6 > div .main-section6-left {
+  padding-right: 10px;
+}
+.main-section6 > div .main-section6-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+.main-section6 > div .main-section6-right ::-moz-placeholder {
+  color: #fff;
+}
+.main-section6 > div .main-section6-right :-ms-input-placeholder {
+  color: #fff;
+}
+.main-section6 > div .main-section6-right ::placeholder {
+  color: #fff;
+}
+.main-section6 > div .main-section6-right input {
+  height: 30px;
+  background-color: #1e1d23;
+  border: none;
+  padding-left: 10px;
+}
+.main-section6 > div .main-section6-right a {
+  border-radius: 3px;
+  padding: 8px 15px;
+  background-color: #048383;
+  color: #fff;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.main-section7 {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+}
+.main-section7-left {
+  width: 65%;
+}
+.main-section7-right {
+  width: 35%;
+}
+.main-section7-right > div span {
+  display: inline-block;
+  display: flex;
+  width: 25px;
+  background-color: red;
+  padding: 5px;
+  border-radius: 50%;
+}
+
 @media screen and (max-width: 768px) {
   .main-section1 {
     width: 70%;
@@ -429,6 +494,22 @@
   .main-section5-bottom > div:nth-of-type(2), .main-section5-bottom > div:nth-of-type(3) {
     margin-top: 15px;
   }
+
+  .main-section6 > div {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .main-section6 > div .main-section6-left, .main-section6 > div .main-section6-right {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .main-section6 > div .main-section6-left input, .main-section6 > div .main-section6-right input {
+    margin-top: 20px;
+  }
+  .main-section6 > div .main-section6-left a, .main-section6 > div .main-section6-right a {
+    margin-top: 20px;
+  }
 }
 @media screen and (min-width: 769px) and (max-width: 991px) {
   .main-section2-top {
@@ -474,6 +555,18 @@
   }
   .main-section5-bottom > div:nth-of-type(3) {
     margin-top: 15px;
+  }
+
+  .main-section6 > div .main-section6-left, .main-section6 > div .main-section6-right {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .main-section6 > div .main-section6-left input, .main-section6 > div .main-section6-right input {
+    margin-top: 20px;
+  }
+  .main-section6 > div .main-section6-left a, .main-section6 > div .main-section6-right a {
+    margin-top: 20px;
   }
 }
 * {
