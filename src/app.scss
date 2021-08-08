@@ -1,5 +1,6 @@
 @import "partials/basicNav";
 @import "partials/header";
+@import "partials/footer";
 @import "partials/main";
 @import "variables";
 @import "mixin";
@@ -31,7 +32,7 @@ h2{
 p{
     color: $lightGray;
 }
-.main-section1, .main-section2, .main-section3, .main-section4, .main-section5, .main-section6, .main-section7{
+.main-section1, .main-section2, .main-section3, .main-section4, .main-section5, .main-section6, .main-section7, .footer-top{
     padding-top: 60px;
     padding-bottom: 60px;
 }

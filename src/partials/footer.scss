@@ -1,0 +1,142 @@
+@import "../variables";
+@import "../mixin";
+
+.footer{
+    color: #fff;
+    &-top{
+        width: 100%;
+        background-image: url('../traccia/images/bg-7.jpg');
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        &-container{
+            @include container1;
+            display: flex;
+            flex-wrap: wrap;
+            >div{
+                width: calc((100% - 30px) / 4 );
+            }
+            >div:first-of-type{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                font-size: $fontSmall;
+                >div:first-of-type{
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+                a{
+                    @include button1;
+                    width: fit-content;
+                }
+            }
+            &-box:nth-of-type(2){
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            &-box:nth-of-type(3){
+                margin-right: 10px;
+            }
+            &-box{
+                background-color: black;
+                border-radius: 5px;
+                padding: 30px 0 30px 20px;
+                h4{
+                    margin-bottom: 15px;
+                }
+                div{
+                    width: 100%;
+                    div{
+                        margin-bottom: 5px;
+                        font-size: $fontSmall;
+                        a{
+                            color: $lightGray;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    &-bottom{
+        background-color: $darkBlack;
+        color: $lightGray;
+        font-size: $fontSmall;
+        >div{
+            @include container1;
+            padding: 15px 0;
+            display: flex;
+            justify-content: space-between;
+            >div:first-of-type{
+                padding-right: 15px;
+            }
+        }
+    }
+}
+
+// amrtphone
+@media screen and (max-width: 768px){
+.footer{
+    &-top{
+        &-container{
+            >div{
+                width: 100%;
+                margin-top: 15px;
+            }
+            >div:first-of-type{
+                >*{
+                    margin-bottom: 15px;
+                }
+            }
+            &-box:nth-of-type(2){
+                margin-right: 0;
+                margin-left: 0;
+            }
+            &-box:nth-of-type(3){
+                margin-right: 0;
+            }
+            &-box{
+                padding: 10px;
+                >div{
+                    display: flex;
+                    flex-wrap: wrap;
+                    >div{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+// /smarphone
+
+// tablet
+@media screen and (min-width: 769px) and (max-width: 991px){
+.footer{
+    &-top{
+        &-container{
+            >div{
+                width: calc((100% - 15px) / 2 );
+            }
+            &-box:nth-of-type(2){
+                margin-right: 0;
+                margin-left: 15px;
+            }
+            &-box:nth-of-type(3){
+                margin-right: 15px;
+                margin-top: 15px;
+            }
+            &-box:nth-of-type(4){
+                margin-top: 15px;
+            }
+            &-box{
+                padding: 15px;
+            }
+        }
+    }
+}
+}
+// /tablet
