@@ -26,10 +26,9 @@
                     font-size: 16px;
                     font-weight: bold;
                 }
-                a{
-                    @include button1;
-                    width: fit-content;
-                }
+                // a{
+                //     width: fit-content;
+                // }
             }
             &-box:nth-of-type(2){
                 margin-left: 10px;

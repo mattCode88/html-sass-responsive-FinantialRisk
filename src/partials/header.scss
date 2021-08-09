@@ -33,11 +33,6 @@
                         color: #fff;
                     }
                 }
-                li:last-of-type{
-                    a{
-                        @include button1;
-                    }
-                }
             }
         }
     }
@@ -57,14 +52,6 @@
             p{
                 color: $lightGray;
                 margin-bottom: 35px;
-            }
-            >div{
-                a:first-of-type{
-                    @include button1;
-                }
-                a:last-of-type{
-                    @include button2;
-                }
             }
         }
     }
