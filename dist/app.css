@@ -22,6 +22,9 @@
 .basic-nav-container div:first-of-type > span:first-child {
   padding-right: 5px;
 }
+.basic-nav-container div:last-of-type i {
+  cursor: pointer;
+}
 .basic-nav-container div:last-of-type > div {
   padding-left: 20px;
 }
@@ -32,6 +35,11 @@
   padding-left: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  .basic-nav-container > div:last-of-type span:last-of-type {
+    display: none;
+  }
+}
 .header {
   width: 100%;
   height: 700px;
@@ -53,7 +61,7 @@
   display: none;
 }
 .header-nav-left {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
 }
 .header-nav-left span {
@@ -69,6 +77,9 @@
 }
 .header-nav-right ul li a {
   color: #fff;
+}
+.header-nav-right ul li a:hover {
+  font-weight: bold;
 }
 .header-content {
   height: calc(100% - 60px);
@@ -95,12 +106,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .header-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .header-nav .header-nav-left, .header-nav .header-nav-right {
+  .header-nav .header-nav-right {
     display: none;
   }
   .header-nav .header-nav-hamburger {
@@ -169,6 +175,9 @@
 }
 .footer-top-container-box div div a {
   color: #bcbdbd;
+}
+.footer-top-container-box div div a:hover {
+  color: #fff;
 }
 .footer-bottom {
   background-color: #111117;

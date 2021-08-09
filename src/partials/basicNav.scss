@@ -22,6 +22,9 @@
             }
         }
         div:last-of-type{
+            i{
+                cursor: pointer;
+            }
             >div{
                 padding-left: 20px;
                 >span:nth-child(2){
@@ -36,3 +39,15 @@
         }
     }
 }
+
+// smartphone
+@media screen and (max-width: 768px){
+    .basic-nav-container{
+        >div:last-of-type{
+            span:last-of-type{
+                display: none;
+            }
+        }
+    }
+}
+// /smartphone

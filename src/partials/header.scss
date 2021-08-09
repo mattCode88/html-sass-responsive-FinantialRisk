@@ -18,7 +18,7 @@
             display: none;
         }
         &-left{
-            font-size: 14px;
+            font-size: 18px;
             font-weight: bold;
             span{
                 color: $green;
@@ -31,6 +31,9 @@
                     margin-left: 20px;
                     a{
                         color: #fff;
+                    }
+                    a:hover{
+                        font-weight: bold;
                     }
                 }
             }
@@ -59,8 +62,7 @@
 
 @media screen and (max-width: 768px){
     .header-nav{
-        @include flexCenter;
-        .header-nav-left, .header-nav-right{
+        .header-nav-right{
         display: none;
         }
         .header-nav-hamburger{
